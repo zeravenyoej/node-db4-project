@@ -17,7 +17,6 @@ exports.up = async function(knex) {
         table.integer("Step_number").notNullable()
         table.integer("Recipe_Id")
             .references("Id")
-            .unsigned()
             .inTable("Recipes")
             .onDelete("CASCADE")
             .onUpdate("CASCADE")

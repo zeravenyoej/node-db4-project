@@ -53,4 +53,4 @@ router.get('/:id/instructions', async (req, res, next) => {
 
 
 
-module.exports = route
+module.exports = router

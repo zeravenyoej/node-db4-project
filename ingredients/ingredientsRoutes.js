@@ -12,10 +12,10 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-//get all recipes that ulilize an ingredient
+//get all recipes that utilize an ingredient
 router.get('/:id/recipes', async (req, res, next) => {
     try {
-        const { id } = req.params.id
+        const { id } = req.params
         const recipes = await ingHelp.getRecipesByIng(id)
         res.json(recipes)
     } catch(err){
@@ -23,4 +23,4 @@ router.get('/:id/recipes', async (req, res, next) => {
     }
 })
 
-module.exports = route
+module.exports = router

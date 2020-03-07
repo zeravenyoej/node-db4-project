@@ -13,6 +13,6 @@ function getRecipesByIng(id){
     return db("Recipes_Ingredients as ri")
         .join("Recipes as r", "r.Id", "ri.Recipe_Id")
         .join("Ingredients as i", "i.Id", "ri.Ingredient_Id")
-        .where({Ingredient_Id: id})
+        .where("ri.Ingredient_Id", id)
         .select("r.Name")
 }

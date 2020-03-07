@@ -8,8 +8,8 @@ const PORT = 7000;
 server.use(helmet())
 server.use(express.json())
 
-server.use('/api/recipies', recipiesRoutes)
-server.use('./api/ingredients', ingredientsRoutes)
+server.use('/api/recipes', recipiesRoutes)
+server.use('/api/ingredients', ingredientsRoutes)
 
 server.use((err, req, res, next) => {
     console.log(err)
@@ -17,5 +17,5 @@ server.use((err, req, res, next) => {
 })
 
 server.listen(PORT, () => {
-    console.log(`Server is running on port ${port}`)
+    console.log(`Server is running on port ${PORT}`)
 })
