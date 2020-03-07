@@ -5,7 +5,7 @@ module.exports = {
       filename: './dev.sqlite3'
     }, 
     migrations: {
-      directory: './migrations'
+      directory: './data/migrations'
     },
     pool: {
       afterCreate: (conn, done) => {
