@@ -7,6 +7,7 @@ exports.seed = function(knex) {
       return knex('Ingredients').insert([
         {Name: 'Carrots', Quantity: 4},
         {Name: 'Raisins', Quantity: 24},
+        {Name: 'Ginger', Quantity: 1},
         {Name: 'Can of whipped cream', Quantity: 1},
         {Name: 'Stick of butter', Quantity: 1},
         {Name: 'Scoop of fudge', Quantity: 1},
